@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+/* 
+=============== 
+Variables
+=============== */
+
+:root {
+  /* primary */
+  --Cyan: hsl(179, 62%, 43%);
+  --Light_Cyan: hsl(179, 62%, 55%);
+  --Bright_Yellow: hsl(71, 73%, 54%);
+  /* Neutral */
+  --Light_Gray: hsl(204, 43%, 93%);
+  --Grayish_Blue: hsl(218, 22%, 67%);
+  
+  /* Typography */
+
+  /* Body Copy */
+  
+  --Font size: 16px;
+  
+  /* Font */
+  
+  --Family: "Karla"; /*(https://fonts.google.com/specimen/Karla);*/
+  /* - Weights: 400, 700; */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+body{
+    font-family: var(--Family);
+    font-weight: 400;
+    font-size: 16px;
+    width: 100vw;
+    height: 100vh;
+    background:var(--Light_Gray);
+}
+main {
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+.grid{
+    width: 45vw;
+    /* height: 35vh; */
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(2, 1fr);
+     grid-template-rows: 200px 250px ; 
+     /* grid-auto-rows: minmax(200px, auto) ;  */
+    border-radius: 5px;
+
+}
+/* BOX*/
+.box{
+    color:#fff;
+}
+
+.box1{
+    grid-column: 1/3;
+    background: #fff;
+    padding: 30px;
+}
+
+.box2{
+
+    background: var(--Cyan);
+    padding: 40px;
+}
+
+.box3{
+    background: var(--Light_Cyan);
+    padding: 40px;
+}
+
+/* Text */
+
+.title{
+    font-size: 2em;
+    color: var(--Cyan);
+    margin-bottom: 25px;
+}
+
+.box1 h3{
+    color: var(--Bright_Yellow);
+    margin-bottom: 10px;
+}
+
+.box1 p{
+     color: lightgray;
+     font-weight:bold;
+}
+
+.box2 h3 , .box3 h3{
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.box2 .precio{
+    display:flex;
+    align-items: center;
+    font-size: 2.5em;
+}
+
+.box2 .paragraph{
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.6);
+    margin-left: 15px;
+}
+
+.offer{
+    text-align-last: justify;
+}
+
+.box2 .boton{
+    border-radius: 5px;
+    background: var(--Bright_Yellow);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 7vh;
+    margin-top: 25px;
+
+}
+.box2 .boton a{
+     color: #fff;
+    text-decoration: none;
+    font-weight: bolder;
+ }
+
+ .box3 li{
+    list-style: none; 
+ }
+
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
