@@ -45,7 +45,6 @@ main {
     align-items: center;
     justify-content: center;
 
-
 }
 
 .grid{
@@ -145,6 +144,7 @@ main {
 
  .box3 li{
     list-style: none; 
+    padding-bottom: 4px;
  }
 
  @media screen and (max-width:480px){
