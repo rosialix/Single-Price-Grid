@@ -35,47 +35,56 @@ body{
     font-weight: 400;
     font-size: 16px;
     width: 100vw;
-    height: 100vh;
+    height: 100vh; 
     background:var(--Light_Gray);
 }
+
 main {
     height: 600px;
     display: flex;
-    justify-content: center;
     align-items: center;
-  }
-
-.grid{
-    width: 45vw;
-    /* height: 35vh; */
-    display: grid;
     justify-content: center;
-    grid-template-columns: repeat(2, 1fr);
-     grid-template-rows: 200px 250px ; 
-     /* grid-auto-rows: minmax(200px, auto) ;  */
-    border-radius: 5px;
+
 
 }
+
+.grid{
+    width: 50vw;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2,1fr);
+    grid-template-areas: 
+        "join join"
+        "monthly why";
+}
+
 /* BOX*/
 .box{
     color:#fff;
 }
 
 .box1{
-    grid-column: 1/3;
+    grid-area: join;
     background: #fff;
     padding: 30px;
+    /* top-left | top-right | bottom-right | bottom-left */
+    border-radius: 10px 10px 0 0;
 }
 
 .box2{
-
+    grid-area: monthly;
     background: var(--Cyan);
     padding: 40px;
+    border-bottom-left-radius: 10px;
+
 }
 
 .box3{
+    grid-area: why;
     background: var(--Light_Cyan);
     padding: 40px;
+    border-bottom-right-radius: 10px;
 }
 
 /* Text */
@@ -104,7 +113,7 @@ main {
 .box2 .precio{
     display:flex;
     align-items: center;
-    font-size: 2.5em;
+    font-size: 2.5rem;
 }
 
 .box2 .paragraph{
@@ -115,6 +124,7 @@ main {
 
 .offer{
     text-align-last: justify;
+    font-size: 1rem;
 }
 
 .box2 .boton{
@@ -136,6 +146,29 @@ main {
  .box3 li{
     list-style: none; 
  }
+
+ @media screen and (max-width:480px){
+    
+    main {
+        height: 1000px;
+    }
+     
+    .grid{
+        grid-template-columns: 1fr;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-areas: 
+            "join"
+            "monthly"
+            "why";
+    }
+
+    .box1, .box2, .box3{
+        width: 50vw;
+        padding: 30px;
+        border-radius: 0px;
+
+    }
+}
 
 
 .attribution { font-size: 11px; text-align: center; }
