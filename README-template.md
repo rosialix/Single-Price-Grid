@@ -41,8 +41,8 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/rosialix/Single-Price-Grid)
-- Live Site URL: [Add live site URL here](https://github.com/rosialix/Single-Price-Grid)
+- Solution URL: [https://github.com/rosialix/Single-Price-Grid](https://github.com/rosialix/Single-Price-Grid)
+- Live Site URL: [https://rosialix.github.io/Single-Price-Grid/](https://rosialix.github.io/Single-Price-Grid/)
 
 ## My process
 
